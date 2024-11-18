@@ -22,8 +22,8 @@ if voucher_codes is not None:
     # Initialize a list to keep track of generated image files
     img_files = []
 
-    # URL of the Roboto Regular TTF file hosted on Google Fonts CDN
-    font_url = "https://github.com/google/fonts/raw/main/apache/robotoslab/RobotoSlab%5Bwght%5D.ttf"
+    # URL of the Roboto Regular TTF file hosted on CDN
+    font_url = "https://cdn.jsdelivr.net/npm/roboto-font@0.1.0/fonts/Roboto_slab/robotoslab-regular-webfont.ttf"
 
     # Fetch the font file from the URL
     response = requests.get(font_url)
