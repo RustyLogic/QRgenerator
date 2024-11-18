@@ -69,6 +69,7 @@ if voucher_codes is not None:
                     draw.text(((qr_width - desc_width) / 2, y_text), desc_line, fill="black", font=font)
                     y_text += font.getbbox(desc_line)[3] - font.getbbox(desc_line)[1]
 
+                qr_img = qr_img.convert("RGB")  # Convert QR code to RGB mode
                 # Paste the QR code into the blank image, centered vertically
                 img.paste(qr_img, (0, y_text + padding // 2))
 
